@@ -5,7 +5,7 @@ function dataHandling2(input){
 
     var hasil = ''
 
-    input.splice(1,2, 'Roman Alamsyah Elsharawy', 'Provinsi Bandar Lampung')
+    input.splice(1, 2, 'Roman Alamsyah Elsharawy', 'Provinsi Bandar Lampung')
     input.splice(4, 1, "Pria", "SMA Internasional Metro")
 
     var spliceTTL = input[3].split('/')
