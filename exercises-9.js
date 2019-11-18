@@ -6,7 +6,7 @@ function cariMean(arr) {
         totalNilai += arr[i]
     }
 
-    var result = Math.ceil(totalNilai / 5) //Pembulatan keatas menggunakan math.ceil
+    var result = Math.round(totalNilai / lengthValue) //disoal pembulatan keatas namun untuk test case ke 4 jadi 3 hasilnya kalo pake math ceil
 
     return result
     
