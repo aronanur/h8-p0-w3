@@ -2,6 +2,7 @@ function tentukanDeretAritmatika(arr) {
     var range = arr[0]
     var prevNumber = 0
     var countInvalid = 0
+    var result  = ''
 
     for(i = 0; i < arr.length;i++){
         prevNumber = i > 0 ? arr[i - 1] : 0
@@ -9,13 +10,10 @@ function tentukanDeretAritmatika(arr) {
             countInvalid += 1
         }
     }
-
-    if(countInvalid === 0){
-        return true
-    }else{
-        return false
-    }
     
+    result = countInvalid === 0 ? true : false 
+
+    return result
   }
   
   // TEST CASES
