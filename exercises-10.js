@@ -6,7 +6,7 @@ function perkalianUnik(arr) {
 
         var multiplyNumber  = 1    //secara default aku isi 1 karena kalo diisi 0 maka you know lah semua angka di kaliin 0 ya bakal 0
         currentNumber       = arr[i]
-        arr.splice(i, 1); //potong angka di array sesuai dengan indeks
+        arr.splice(i, 1); //potong 1 angka di array sesuai dengan indeks
 
         for(j = 0; j < arr.length; j++){
 
