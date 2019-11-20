@@ -16,8 +16,8 @@ function targetTerdekat(arr) {
         }
 
         if(countO > 0 && countX > 0){
-             hasil = Math.abs(positionO - positionX); //kalo udah ketemu langsung return aja
-             return hasil; //kenapa di return karena bilangan pertama yang ketemu berarti itu yg terdekat
+             hasil = Math.abs(positionO - positionX);
+             return hasil; 
         }
 
     }
