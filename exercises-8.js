@@ -5,8 +5,8 @@ function pasanganTerbesar(num) {
     var sliceJoinNumber = ''
     var biggestNumber   = 0
 
-    for(i = 0; i < splitNumString.length;i++){
-        sliceJoinNumber = splitNumString.slice(i, i + 2).join('')
+    for(i = 0; i < numToString.length;i++){
+        sliceJoinNumber = numToString.slice(i, i + 2)
         var currentNumber = Number(sliceJoinNumber)
 
         if(currentNumber > biggestNumber){
