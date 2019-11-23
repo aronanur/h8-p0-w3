@@ -4,6 +4,7 @@
 //     return splitKata.length
 //   }
 
+//cara ke 2 non built in function
 function hitungJumlahKata(params) {
   var countWord = 1
   for(i = 0; i < params.length; i++){
