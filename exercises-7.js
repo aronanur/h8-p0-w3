@@ -1,7 +1,20 @@
-function hitungJumlahKata(kalimat) {
-    var splitKata = kalimat.split(' ')
-    return splitKata.length
+//Cara Ke 1 pake built in function
+// function hitungJumlahKata(kalimat) {
+//     var splitKata = kalimat.split(' ')
+//     return splitKata.length
+//   }
+
+function hitungJumlahKata(params) {
+  var countWord = 1
+  for(i = 0; i < params.length; i++){
+    if(params[i] === ' '){
+      countWord++
+    }
   }
+
+  return countWord
+
+}
   
   // TEST CASES
   console.log(hitungJumlahKata('I have a dream')); // 4
