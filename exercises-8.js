@@ -1,7 +1,6 @@
 function pasanganTerbesar(num) {
 
     var numToString     = String(num);
-    var splitNumString  = numToString.split('')
     var sliceJoinNumber = ''
     var biggestNumber   = 0
 
