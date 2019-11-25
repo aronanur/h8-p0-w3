@@ -4,7 +4,7 @@ function groupAnimals(animals) {
     var iteration = 0
     // animals.sort() //jika pake built in
 
-    //tanpa built in
+    //tanpa built in coba metode bubble sort
     for(i = 0; i < animals.length; i++){
         for(j = 0; j < animals.length - 1; j++){
             if(animals[j] > animals[j + 1]){
