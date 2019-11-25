@@ -1,22 +1,24 @@
 function angkaPalindrome(num) {
+
     var nextNumber = num + 1
     var palindrome = false
+    var tempNumber = ''
     var result = ''
-    
-    while (palindrome === false) {        
-        var numToString = String(nextNumber) 
-        var reverseNumber = '' 
 
-        for(i = numToString.length - 1; i >= 0;i--){
-            reverseNumber += numToString[i]
+    while (palindrome === false) {
+        var numToString = String(nextNumber)
+        tempNumber = ''
+
+        for(i = numToString.length - 1; i >= 0;i --){
+            tempNumber += numToString[i]
         }
 
-        if(reverseNumber === numToString){
+        if(tempNumber === numToString){
             palindrome = true
-            result = reverseNumber
+            result = numToString
+        }else{
+            nextNumber++
         }
-
-        nextNumber++
     }
 
     return result

@@ -1,27 +1,20 @@
 function perkalianUnik(arr) {
-    var currentNumber = ''
-    var result        = []
+    var result = []
+    var currentMultiply = 1 
 
-    for(i = 0; i < arr.length;i++){
-
-        var multiplyNumber  = 1    //secara default aku isi 1 karena kalo diisi 0 maka you know lah semua angka di kaliin 0 ya bakal 0
-        currentNumber       = arr[i]
-        arr.splice(i, 1); //potong 1 angka di array sesuai dengan indeks
-
+    for(i = 0; i < arr.length; i++){
+        currentMultiply = 1
         for(j = 0; j < arr.length; j++){
-
-            multiplyNumber *= arr[j]
-
+            if(i !== j){
+                currentMultiply *= arr[j]
+            }
         }
-
-        result.push(multiplyNumber)
-        arr.splice(i, 0, currentNumber) //masukan kembali current number ke array
-
+        result.push(currentMultiply)
     }
 
     return result
 
-  }
+}
   
   // TEST CASES
   console.log(perkalianUnik([2, 4, 6])); // [24, 12, 8]

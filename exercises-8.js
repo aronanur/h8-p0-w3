@@ -1,16 +1,21 @@
 function pasanganTerbesar(num) {
 
-    var numToString     = String(num);
-    var sliceJoinNumber = ''
-    var biggestNumber   = 0
+    var tempNumber = ''
+    var biggestNumber = 0
+    var numToString = String(num)
+    var range = 2
 
-    for(i = 0; i < numToString.length;i++){
-        sliceJoinNumber = numToString.slice(i, i + 2)
-        var currentNumber = Number(sliceJoinNumber)
+    for(i = 0; i < numToString.length; i++){
+        tempNumber = ''
 
-        if(currentNumber > biggestNumber){
-            biggestNumber = currentNumber
+        for(j = i; j < range + i; j++){
+            tempNumber += numToString[j]
         }
+
+        if(tempNumber > biggestNumber){
+            biggestNumber = tempNumber
+        }
+
     }
 
     return biggestNumber

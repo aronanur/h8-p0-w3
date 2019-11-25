@@ -1,23 +1,20 @@
 function tentukanDeretGeometri(arr) {
-    var countInvalid = 0 
-    var prevNumber   = 1
-    var result       = ''
 
-    for(i = 0; i < arr.length ; i++){
+    var prevNumber = ''
+    var result = ''
 
-        prevNumber = i > 0 ? arr[i - 1] : 1
+    for(i = 0; i < arr.length; i++){
+        prevNumber = i > 0 ? arr[i - 1] : arr[i]
 
         if(arr[i] % prevNumber !== 0){
-            countInvalid += 1
+            return false;
         }
 
     }
 
-    result = countInvalid === 0 ? true : false 
+    return true
 
-    return result
-
-  }
+}
   
   // TEST CASES
   console.log(tentukanDeretGeometri([1, 3, 9, 27, 81])); // true

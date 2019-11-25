@@ -1,15 +1,14 @@
-function palindrome(word){
-    var reverseWord = ''
-    
-    for(i = word.length - 1; i >= 0; i--){
-        reverseWord += word[i]
+function palindrome(word){  
+    var tempString = ''
+    var result = ''
+
+    for(i = word.length - 1;i >= 0; i--){
+        tempString += word[i]
     }
 
-    if(reverseWord === word){
-        return true
-    }else {
-        return false
-    }    
+    result = tempString === word ? true : false
+
+    return result
 
 }
 

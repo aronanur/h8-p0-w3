@@ -1,27 +1,25 @@
 function targetTerdekat(arr) {
-    var positionX = '';
-    var positionO = '';
-    var countX    = 0;
-    var countO    = 0;
-    var hasil     = 0;
+    var positionX = ''
+    var positionO = ''
+    var result = 0
 
-    for(i = 0; i < arr.length;i++){
+    for(i = 0; i < arr.length; i++){
 
-        if(arr[i] === 'x'){
-            positionX = i;
-            countX += 1;
-        }else if(arr[i] === 'o'){
-            positionO = i;
-            countO += 1;
+        if(arr[i] === 'o'){
+            positionO = i
+        }else if(arr[i] === 'x'){
+            positionX = i
         }
 
-        if(countO > 0 && countX > 0){
-             hasil = Math.abs(positionO - positionX);
-             return hasil; 
+
+        if(positionX !== '' && positionO !== ''){
+            result = Math.abs(positionO - positionX)
+            return result
         }
 
     }
-    return hasil;
+
+    return result
 }
   
   // TEST CASES

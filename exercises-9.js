@@ -1,17 +1,17 @@
 function cariMean(arr) {
-    var totalNilai = 0
-    var lengthValue = arr.length
-    
+    var n = arr.length
+    var total = 0
+    var result = ''
+
     for(i = 0; i < arr.length; i++){
-        totalNilai += arr[i]
+        total += arr[i]
     }
 
-    var result = Math.round(totalNilai / lengthValue) //disoal pembulatan keatas namun untuk test case ke 4 jadi 3 hasilnya kalo pake math ceil
+    result = Math.round(total / n)
 
     return result
-    
 
-  }
+}
   
   // TEST CASES
   console.log(cariMean([1, 2, 3, 4, 5])); // 3

@@ -1,15 +1,9 @@
-//Cara Ke 1 pake built in function
-// function hitungJumlahKata(kalimat) {
-//     var splitKata = kalimat.split(' ')
-//     return splitKata.length
-//   }
-
-//cara ke 2 non built in function
-function hitungJumlahKata(params) {
+function hitungJumlahKata(kalimat) {
   var countWord = 1
-  for(i = 0; i < params.length; i++){
-    if(params[i] === ' '){
-      countWord++
+
+  for(i = 0; i < kalimat.length - 1; i++){
+    if(kalimat[i] === ' '){
+      countWord ++
     }
   }
 
