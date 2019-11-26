@@ -7,8 +7,6 @@ function palindrome(word){
 
     return tempString === word
 
-    return result
-
 }
 
 // TEST CASES
