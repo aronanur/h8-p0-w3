@@ -1,18 +1,31 @@
-function hitungJumlahKata(kalimat) {
-  var countWord = 1
+function hitungJumlahKata(kalimat) { 
 
-  for(i = 0; i < kalimat.length - 1; i++){
+  var sentence = []
+  var tempString = ''
+  var iteration = 0
+
+  //tanpa built in function
+  for(i = 0; i < kalimat.length; i++){
+
     if(kalimat[i] === ' '){
-      countWord ++
+      i > 0 ? iteration++ : ''
+      tempString = ''
+    }else{
+      tempString += kalimat[i]
     }
+    
+    if(tempString !== ''){
+      sentence[iteration] = tempString
+    }
+
   }
 
-  return countWord
+  return sentence.length
 
 }
   
   // TEST CASES
-  console.log(hitungJumlahKata('I have a dream')); // 4
+  console.log(hitungJumlahKata(' I have a dream ')); // 4
   console.log(hitungJumlahKata('Never eat shredded wheat or cake')); // 6
   console.log(hitungJumlahKata('A song to sing')); // 4
   console.log(hitungJumlahKata('I')); // 1
