@@ -18,3 +18,5 @@ function sorting(arr) {
 
 console.log(sorting(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
 console.log(sorting(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
+console.log(sorting([10, 8, 7, 9, 1 ]));
+
