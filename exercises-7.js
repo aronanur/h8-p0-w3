@@ -4,7 +4,7 @@ function hitungJumlahKata(kalimat) {
   var tempString = ''
   var iteration = 0
 
-  //tanpa built in function
+  //mencoba tanpa built in function
   for(i = 0; i < kalimat.length; i++){
 
     if(kalimat[i] === ' '){
