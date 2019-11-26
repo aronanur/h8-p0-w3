@@ -8,10 +8,10 @@ function dataHandling2(input){
     input.splice(1, 2, 'Roman Alamsyah Elsharawy', 'Provinsi Bandar Lampung')
     input.splice(4, 1, "Pria", "SMA Internasional Metro")
 
-    var spliceTTL = input[3].split('/')
-    var bulan     = konversiNamaBulan(spliceTTL[1])
-    var sortDesc  = spliceTTL.sort(function(value1, value2){ return value2 - value1 })
-    var dateFormat= input[3].split('/').join('-')
+    var splitTTL  = input[3].split('/')
+    var bulan     = konversiNamaBulan(splitTTL[1])
+    var dateFormat= splitTTL.join('-')
+    var sortDesc  = splitTTL.sort(function(value1, value2){ return value2 - value1 })
     var name      = input[1].slice(0, 14);
 
     hasil += `${input} \n${bulan} \n${sortDesc} \n${dateFormat} \n${name}`
