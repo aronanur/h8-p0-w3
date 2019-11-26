@@ -5,7 +5,7 @@ function angkaPalindrome(num) {
     var tempNumber = ''
     var result = ''
 
-    while (palindrome === false) {
+    while (!palindrome) {
         var numToString = String(nextNumber)
         tempNumber = ''
 
