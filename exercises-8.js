@@ -11,13 +11,13 @@ function pasanganTerbesar(num) {
             tempNumber += numToString[j]
         }
 
-        if(tempNumber > biggestNumber){
+        if(Number(tempNumber) > Number(biggestNumber)){
             biggestNumber = tempNumber
         }
 
     }
 
-    return biggestNumber
+    return Number(biggestNumber)
 
 }
   
