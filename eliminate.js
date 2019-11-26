@@ -2,7 +2,6 @@ function eliminateSameNumber(arr1, arr2) {
     
     var tempArray = []
     var total = ''
-    var result = ''
 
     for(i = 0; i < arr1.length; i++){
         var x = false
@@ -61,4 +60,6 @@ function sumNumber(arr) {
     return total
 }
 
+//Test Cases
 console.log(eliminateSameNumber([1, 3, 4, 7 , 8, 2], [1, 3, 9, 4, 7, 10]));
+console.log(eliminateSameNumber([2, 9, 10], [1, 2, 4]));
