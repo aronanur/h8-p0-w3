@@ -1,12 +1,11 @@
 function palindrome(word){  
     var tempString = ''
-    var result = ''
 
     for(i = word.length - 1;i >= 0; i--){
         tempString += word[i]
     }
 
-    result = tempString === word ? true : false
+    return tempString === word
 
     return result
 
