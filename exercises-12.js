@@ -1,10 +1,7 @@
 function tentukanDeretGeometri(arr) {
 
-    var prevNumber = ''
-    var result = ''
-
     for(i = 0; i < arr.length; i++){
-        prevNumber = i > 0 ? arr[i - 1] : arr[i]
+        var prevNumber = i > 0 ? arr[i - 1] : arr[i]
 
         if(arr[i] % prevNumber !== 0){
             return false;

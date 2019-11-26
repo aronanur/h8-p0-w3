@@ -1,12 +1,11 @@
 function pasanganTerbesar(num) {
 
-    var tempNumber = ''
     var biggestNumber = 0
     var numToString = String(num)
     var range = 2
 
     for(i = 0; i < numToString.length; i++){
-        tempNumber = ''
+        var tempNumber = ''
 
         for(j = i; j < range + i; j++){
             tempNumber += numToString[j]

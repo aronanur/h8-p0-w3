@@ -1,10 +1,8 @@
 function tentukanDeretAritmatika(arr) {
-    var result = ''
-    var prevNumber = ''
 
     for(i = 0; i < arr.length; i++){
         var range = arr[0]
-        prevNumber = i > 0 ? arr[i - 1] : 0
+        var prevNumber = i > 0 ? arr[i - 1] : 0
 
         if(arr[i] - prevNumber !== range){
             return false

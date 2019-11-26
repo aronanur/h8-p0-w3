@@ -9,7 +9,7 @@ function angkaPalindrome(num) {
         var numToString = String(nextNumber)
         tempNumber = ''
 
-        for(i = numToString.length - 1; i >= 0;i --){
+        for(i = numToString.length - 1; i >= 0;i--){
             tempNumber += numToString[i]
         }
 
