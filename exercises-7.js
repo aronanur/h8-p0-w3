@@ -19,7 +19,7 @@ function hitungJumlahKata(kalimat) {
 
   }
 
-  return sentence
+  return sentence.length
 
 }
   
