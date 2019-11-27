@@ -2,24 +2,24 @@ function hitungJumlahKata(kalimat) {
 
   var sentence = []
   var iteration = 0
+  var tempString = ''
 
   //mencoba tanpa built in function
   for(i = 0; i < kalimat.length; i++){
-    var tempString = ''
     if(kalimat[i] === ' '){
       i > 0 ? iteration++ : ''
-      tempString = false
+      tempString = ''
     }else{
       tempString += kalimat[i]
     }
     
-    if(tempString){
+    if(tempString !== ''){
       sentence[iteration] = tempString
     }
 
   }
 
-  return sentence.length
+  return sentence
 
 }
   
