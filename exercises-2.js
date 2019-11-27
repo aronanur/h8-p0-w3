@@ -13,3 +13,4 @@ function balikString(word){
 }
 
 console.log(balikString(word))
+

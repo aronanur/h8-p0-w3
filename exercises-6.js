@@ -2,27 +2,27 @@ function angkaPalindrome(num) {
 
     var nextNumber = num + 1
     var palindrome = false
-    var tempNumber = ''
+    var tempString = ''
     var result = ''
 
-    while (!palindrome) {
-        var numToString = String(nextNumber)
-        tempNumber = ''
+    while(!palindrome){
 
-        for(i = numToString.length - 1; i >= 0;i--){
-            tempNumber += numToString[i]
+        var numToString = String(nextNumber);
+        tempString  = ''
+
+        for(i = numToString.length - 1; i >=0 ;i --){
+            tempString += numToString[i]
         }
 
-        if(tempNumber === numToString){
+        if(tempString === numToString){
             palindrome = true
             result = numToString
         }else{
             nextNumber++
         }
+
     }
-
     return result
-
 }
   
   // TEST CASES
